@@ -3,7 +3,7 @@
 Templete for Android Studio to create an empty activity with Clean Architecture approach.
 
 ### Clean Code
->The Clean  architecture is derived from the Clean Architecture proposed by Uncle Bob. They share many common concepts such as the components, boundaries, and models.
+>This Template is derived from the Clean Architecture proposed by Uncle Bob. They share many common concepts such as the components, boundaries, and models.
 
 ![http://fernandocejas.com/2015/07/18/architecting-android-the-evolution/](http://fernandocejas.com/wp-content/uploads/2014/09/clean_architecture1.png)
 
