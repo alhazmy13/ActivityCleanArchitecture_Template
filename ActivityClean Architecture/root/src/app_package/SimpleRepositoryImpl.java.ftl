@@ -1,10 +1,11 @@
 package ${packageName}.model;
 
 
-import retrofit.Response;
+import retrofit2.Response;
 import rx.Observable;
 import rx.functions.Func1;
-
+import ${packageName}.data.${repositoryInterface};
+import ${packageName}.data.${serviceClass};
 
 public class ${repositoryImplClass} implements ${repositoryInterface} {
 

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <recipe>
-    <#include "../common/recipe_manifest.xml.ftl" />
+    <#include "root/recipe_manifest.xml.ftl" />
 
 <#if generateLayout>
     <#include "../common/recipe_simple.xml.ftl" />
