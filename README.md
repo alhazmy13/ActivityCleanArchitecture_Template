@@ -1,6 +1,17 @@
 # Activity Clean Architecture - Template
 
-A small template for Android Studio to create an empty activity with Clean Architecture.
+Templete for Android Studio to create an empty activity with Clean Architecture approach.
+
+### Clean Code
+>The Clean  architecture is derived from the Clean Architecture proposed by Uncle Bob. They share many common concepts such as the components, boundaries, and models.
+
+![http://fernandocejas.com/2015/07/18/architecting-android-the-evolution/](http://fernandocejas.com/wp-content/uploads/2014/09/clean_architecture1.png)
+
+### Architectural reactive approach
+
+![1](https://cloud.githubusercontent.com/assets/4659608/15095669/8564453e-14dc-11e6-8cbc-2afd74c76ddf.png)
+
+### Install
 
 * To use this template you will need Android Studio.
 
