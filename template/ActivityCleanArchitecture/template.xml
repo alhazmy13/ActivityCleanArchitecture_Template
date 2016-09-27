@@ -73,7 +73,7 @@
 
     <parameter
         id="repositoryImplClass"
-        name="Repository Implementation name"
+        name="Retrofit Implementation name"
         type="string"
         constraints="class|unique|nonempty"
         suggest="${activityClass}RepositoryImpl"
@@ -89,7 +89,24 @@
         suggest="${activityClass}RetrofitService"
         default="MainRetrofitService"
         visibility="generateModelLayer"
-        help="The name of the retrofit service class to create" />   
+        help="The name of the retrofit service class to create" />  
+
+    <parameter
+        id="generateMockImpl"
+        name="Generate Mock Implementation"
+        type="boolean"
+        default="true"
+        help="If true, mock implementation will be generated" />  
+
+    <parameter
+        id="mockImplClass"
+        name="Mock Implementation name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${activityClass}MockImpl"
+        default="MainMockImpl"
+        visibility="generateMockImpl"
+        help="The name of the mock implementation to create" /> 
 
     <parameter
         id="generateModel"

@@ -26,11 +26,17 @@
 
 
 <#if generateModelLayer>
-   <instantiate from="root/src/app_package/SimpleRepositoryImpl.java.ftl"
+   <instantiate from="root/src/app_package/SimpleRetrofitImpl.java.ftl"
                    to="${escapeXmlAttribute(srcOut)}/model/${repositoryImplClass}.java" />
 
     <instantiate from="root/src/app_package/SimpleRetroiftService.java.ftl"
                    to="${escapeXmlAttribute(srcOut)}/model/${retrofitService}.java" />
+</#if>
+
+<#if generateMockImpl>
+   <instantiate from="root/src/app_package/SimpleMockImpl.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/model/${mockImplClass}.java" />
+
 </#if>
 
 <#if generateModelLayer>
