@@ -1,5 +1,4 @@
 package ${packageName}.model;
-package ${packageName}.model;
 
 
 import rx.Observable;
@@ -7,27 +6,26 @@ import rx.functions.Func1;
 import ${packageName}.data.${repositoryInterface};
 import ${packageName}.data.${serviceClass};
 
-public class ${mockImplClass} implements ${repositoryInterface} {
+public class ${repositoryImplClass} implements ${repositoryInterface} {
 
+ private ${serviceClass} mRetrofitService;
 
-    public ${mockImplClass}() {
-     
+    public ${repositoryImplClass}(${serviceClass} retrofitService) {
+        this.mRetrofitService = retrofitService;
     }
 
-//  @Override
-//    public Observable<${modelClass}> methodeFromRepo() {
-//    ${modelClass} model = new ${modelClass}();
-//        return Observable.create(new Observable.OnSubscribe<${modelClass}>() {
-//            @Override
-//            public void call(Subscriber<? super ${modelClass}> subscriber) {
-//                if (model == null)
-//                    throw new RuntimeException("");
-//                else
-//                    subscriber.onNext(model);
-//            }
-//        });
-//
-//
-//    }
+
+   // @Override
+    //public Observable<${modelClass}> methodeFromRepo() {
+      //  return mRetrofitService.methodeFromRetrofit().map(new Func1<Response<${modelClass}>, ${modelClass}>() {
+      //      @Override
+       //     public ${modelClass} call(Response<${modelClass}> response) {
+        //        if (response.isSuccess())
+         //           return response.body();
+          //      else
+           //         throw new RuntimeException(response.body().getResultMessage());
+           // }
+        //});
+   // }
 
 }
