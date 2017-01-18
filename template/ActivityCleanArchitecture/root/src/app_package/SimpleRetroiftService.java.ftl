@@ -6,5 +6,6 @@ import rx.Observable;
 
 public interface ${retrofitService} {
 
+	//GET("")
     //Observable<Response<${modelClass}>> methodeFromRetrofit();
 }

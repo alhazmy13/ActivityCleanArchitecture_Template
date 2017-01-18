@@ -109,6 +109,23 @@
         help="The name of the mock implementation to create" /> 
 
     <parameter
+        id="generateRealmImpl"
+        name="Generate Realm Implementation for caching template"
+        type="boolean"
+        default="true"
+        help="If true, realm implementation will be generated" />  
+
+    <parameter
+        id="realmImplClass"
+        name="Realm Implementation name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${activityClass}RealmImpl"
+        default="MainRealmImpl"
+        visibility="generateRealmImpl"
+        help="The name of the realm implementation to create" /> 
+
+    <parameter
         id="generateModel"
         name="Generate Model for responce"
         type="boolean"

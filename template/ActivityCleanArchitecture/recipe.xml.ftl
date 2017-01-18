@@ -39,6 +39,12 @@
 
 </#if>
 
+<#if generateRealmImpl>
+   <instantiate from="root/src/app_package/SimpleRealmImpl.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/model/${realmImplClass}.java" />
+
+</#if>
+
 <#if generateModelLayer>
    <instantiate from="root/src/app_package/SimpleModel.java.ftl"
                    to="${escapeXmlAttribute(srcOut)}/model/model/${modelClass}.java" />
