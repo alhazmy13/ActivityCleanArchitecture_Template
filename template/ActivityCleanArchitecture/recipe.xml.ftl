@@ -46,8 +46,11 @@
 </#if>
 
 <#if generateModelLayer>
-   <instantiate from="root/src/app_package/SimpleModel.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/model/model/${modelClass}.java" />
+   <instantiate from="root/src/app_package/SimpleRequestModel.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/model/model/${modelRequestClass}.java" />
+                   
+     <instantiate from="root/src/app_package/SimpleResponseModel.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/model/model/${modelResponseClass}.java" />
 
 </#if>
 

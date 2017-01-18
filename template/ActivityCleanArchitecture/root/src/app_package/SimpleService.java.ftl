@@ -1,5 +1,6 @@
 package ${packageName}.data;
 
+import android.content.Context;
 
 public class ${serviceClass} implements ${repositoryInterface}{
  
@@ -21,15 +22,15 @@ public class ${serviceClass} implements ${repositoryInterface}{
 
     // TODO:create methode in repo class
     // 
-    // public Observable<${modelClass}> methodeName() {
-    //     return mRepo.methodeFromRepo();
+    // public Observable<${modelResponseClass}> methodeName(${modelRequestClass} request) {
+    //     return mRepo.methodeFromRepo(request);
     //
     //
     //	//OR if you are using a chacing templete
     //	//if (mContext != null && !Utility.isNetworkAvailable(mContext)) {
-    //  //      return mOfflineRepo.fetchPosts();
+    //  //      return mOfflineRepo.fetchPosts(request);
     //  //} else {
-    //  //      return mRepo.fetchPosts();
+    //  //      return mRepo.fetchPosts(request);
     //  //  }
     // }
     //

@@ -133,13 +133,24 @@
         help="If true, model class will be generated" /> 
 
     <parameter
-        id="modelClass"
-        name="Model name"
+        id="modelRequestClass"
+        name="Model Request name"
         type="string"
         constraints="class|unique|nonempty"
-        default="MainModel"
+        suggest="${activityClass}RequestModel"
+        default="MainRequestModel"
         visibility="generateModel"
-        help="The name of the model class to create" />    
+        help="The name of the request model class to create" />    
+
+     <parameter
+        id="modelResponseClass"
+        name="Model Response name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${activityClass}RespnseModel"
+        default="MainRespnseModel"
+        visibility="generateModel"
+        help="The name of the response model class to create" />    
 
     <parameter
         id="generateLayout"

@@ -15,13 +15,13 @@ public class ${repositoryImplClass} implements ${repositoryInterface} {
 
 
     // @Override
-    //public Observable<${modelClass}> methodeFromRepo() {
+    //public Observable<${modelResponseClass}> methodeFromRepo(${modelRequestClass} request) {
     //  return mRetrofitService.methodeFromRetrofit()
     //            .subscribeOn(Schedulers.io())
     //            .observeOn(AndroidSchedulers.mainThread())
-    //            .map(new Func1<Response<${modelClass}>, ${modelClass}>() {
+    //            .map(new Func1<Response<${modelResponseClass}>, ${modelResponseClass}>() {
     //                 @Override
-    //                 public ${modelClass} call(Response<${modelClass}> response) {
+    //                 public ${modelResponseClass} call(Response<${modelResponseClass}> response) {
     //                      if (response.isSuccess()){
     //                            return response.body();
     //                            //OR if you are using a caching tempelte 

@@ -12,11 +12,11 @@ public class ${mockImplClass} implements ${repositoryInterface} {
     }
 
 //  @Override
-//    public Observable<${modelClass}> methodeFromRepo() {
-//    ${modelClass} model = new ${modelClass}();
-//        return Observable.create(new Observable.OnSubscribe<${modelClass}>() {
+//    public Observable<${modelResponseClass}> methodeFromRepo(${modelRequestClass} request) {
+//    ${modelResponseClass} model = new ${modelResponseClass}();
+//        return Observable.create(new Observable.OnSubscribe<${modelResponseClass}>() {
 //            @Override
-//            public void call(Subscriber<? super ${modelClass}> subscriber) {
+//            public void call(Subscriber<? super ${modelResponseClass}> subscriber) {
 //                if (model == null)
 //                    throw new RuntimeException("");
 //                else

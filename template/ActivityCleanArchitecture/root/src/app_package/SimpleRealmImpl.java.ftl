@@ -15,17 +15,17 @@ public class ${realmImplClass} implements ${repositoryInterface} {
 
 
 //     @Override
-//    public Observable<List<${modelClass}>> methodeFromRepo() {
-//        return mRealm.where(${modelClass}.class).findAll().asObservable()
-//                .map(new Func1<RealmResults<${modelClass}>, List<${modelClass}>>() {
+//    public Observable<List<${modelResponseClass}>> methodeFromRepo(${modelRequestClass} request) {
+//        return mRealm.where(${modelResponseClass}.class).findAll().asObservable()
+//                .map(new Func1<RealmResults<${modelResponseClass}>, List<${modelResponseClass}>>() {
 //                    @Override
-//                    public List<${modelClass}> call(RealmResults<${modelClass}> results) {
+//                    public List<${modelResponseClass}> call(RealmResults<${modelResponseClass}> results) {
 //                        return mRealm.copyFromRealm(results);
 //                    }
 //                });
 //
 //         //OR
-//		//return mRealm.where(${modelClass}.class).findFirst().asObservable();
+//		//return mRealm.where(${modelResponseClass}.class).findFirst().asObservable();
 //
 //    }
 
